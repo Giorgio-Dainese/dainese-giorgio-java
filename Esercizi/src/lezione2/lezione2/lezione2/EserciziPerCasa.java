@@ -38,6 +38,14 @@ import java.util.Scanner;
 public class EserciziPerCasa {
     public static void main(String[] args) {
         System.out.println("Esercizio 1");
-        Scanner
+        Scanner tastiera = new Scanner(System.in);
+        System.out.println("Inserisci numero 1: ");
+        int n1 = Integer.parseInt(tastiera.nextLine());
+        System.out.println("Inserisci numero 2: ");
+        int n2 = Integer.parseInt(tastiera.nextLine());
+        System.out.println("Scegli addizione, sottrazione, moltiplicazione, divisione o modulo: ");
+        String operatore = tastiera.nextLine();
+        //Continuare con if per usare l'operatore selezionato in input
+
     }
 }

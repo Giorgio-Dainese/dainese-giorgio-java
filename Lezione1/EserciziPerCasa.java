@@ -45,7 +45,9 @@ public class EserciziPerCasa {
         int n2 = Integer.parseInt(tastiera.nextLine());
         System.out.println("Scegli addizione, sottrazione, moltiplicazione, divisione o modulo: ");
         String operatore = tastiera.nextLine();
-        //Continuare con if per usare l'operatore selezionato in input
-
+        if (operatore == "Addizione"){
+            System.out.print("La somma è: " +(n1+n2));
+        }
+//Non va l'if
     }
 }

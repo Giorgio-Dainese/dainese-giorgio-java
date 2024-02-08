@@ -45,9 +45,18 @@ public class EserciziPerCasa {
         int n2 = Integer.parseInt(tastiera.nextLine());
         System.out.println("Scegli addizione, sottrazione, moltiplicazione, divisione o modulo: ");
         String operatore = tastiera.nextLine();
-        if (operatore == "Addizione"){
-            System.out.print("La somma è: " +(n1+n2));
+        if (operatore.equals("Addizione") || operatore.equals("addizione")){
+            System.out.print( " Somma = " +(n1+n2));
+        } else if (operatore.equals("Sottrazione")|| operatore.equals("sottrazione")) {
+            System.out.println("Differenza = " +(n1-n2));
+        } else if (operatore.equals("Moltiplicazione")|| operatore.equals("moltiplicazione")) {
+            System.out.println(" Prodotto = " +(n1*n2));
+        } else if (operatore.equals("Divisione")|| operatore.equals("divisione")) {
+            System.out.println("Divisione = " +(n1/n2));
+        }else if (operatore.equals("Modulo")|| operatore.equals("modulo")) {
+            System.out.println("Modulo = " +(n1%n2));
+        } else System.out.println("Operatore scritto non corretto");
         }
-//Non va l'if
+
     }
-}
+

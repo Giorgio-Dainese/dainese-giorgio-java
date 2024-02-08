@@ -33,6 +33,8 @@ Ricorda di usare Math.sqrt per la radice quadrata e Math.pow per elevare a poten
 
          */
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.Scanner;
 
 public class EserciziPerCasa {
@@ -56,7 +58,35 @@ public class EserciziPerCasa {
         }else if (operatore.equals("Modulo")|| operatore.equals("modulo")) {
             System.out.println("Modulo = " +(n1%n2));
         } else System.out.println("Operatore scritto non corretto");
+
+
+
+        System.out.println("Esercizio 2");
+        System.out.println("Inserisci temperatura in Fahrenheit: ");
+        double far = Double.parseDouble(tastiera.nextLine());
+        double cel = (double) ((far - 32) * 5) /9;
+        System.out.println("La temperatura in Celsius è: " +cel);
+        if(cel<1){
+            System.out.println("L'acqua è ghiaccio");
+        } else if (cel<100) {
+            System.out.println("L'acqua è liquida");
+        } else {
+            System.out.println("L'acqua è vapore");
         }
 
+
+
+        System.out.println("Esercizio 3");
+        System.out.println("Inserisci x1:");
+        int x1 = Integer.parseInt(tastiera.nextLine());
+        System.out.println("Inserisci y1:");
+        int y1 = Integer.parseInt(tastiera.nextLine());
+        System.out.println("Inserisci x2:");
+        int x2 = Integer.parseInt(tastiera.nextLine());
+        System.out.println("Inserisci y2:");
+        int y2 = Integer.parseInt(tastiera.nextLine());
+        double distanza = Math.sqrt(Math.pow((x2-x1),2)+Math.pow((y2-y1),2));
+        System.out.println("La distanza è: " +distanza);
+    }
     }
 

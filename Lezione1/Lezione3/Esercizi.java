@@ -64,5 +64,25 @@ public class Esercizi {
             System.out.println("Inserisci un numero: ");
             number = Integer.parseInt(tastiera.nextLine());
         }
+
+
+        System.out.println("Esercizio 5");
+        System.out.println("Scrivi il tuo nome: ");
+        String nome = tastiera.nextLine();
+        String inverso="";
+
+        for (int j= nome.length()-1; j>=0; j--){
+            inverso = inverso + nome.substring(j,(j+1));
+        }
+
+
+
+       /*
+       for (int j= nome.length()-1; j>=0; j--){
+            inverso = inverso + nome.charAt(j);
+        }
+        */
+        System.out.println("Il contrario del tuo nome è: " +inverso);
+
     }
 }

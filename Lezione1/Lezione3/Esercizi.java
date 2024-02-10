@@ -11,9 +11,11 @@ non scrive 0 (terminare quando inserisce 0)
 
 Es5: (String, substring) stampare il proprio nome al contrario
 */
-package lezione3.lezion3;
+package Lezione3;
 
+import java.util.ArrayList;
 import java.util.Scanner;
+
 
 public class Esercizi {
     public static void main(String[] args) {
@@ -26,11 +28,41 @@ public class Esercizi {
             System.out.println("Pari");
         } else System.out.println("Dispari");
 
+
+        System.out.println("Esercizio 2 e 3");
         System.out.println("Quante temperature vuoi inserire?");
         int nTemp = Integer.parseInt(tastiera.nextLine());
+        int somma = 0;
+        double media = 0;
+        int min = 1000;
+        int max = -1000;
+        ArrayList<String> temperature = new ArrayList<String>();
         for (int i = 0; i < nTemp; i++){
             System.out.println("Inserisci la temperatura numero " +(i+1));
             int temp = Integer.parseInt(tastiera.nextLine());
+            somma = somma + temp;
+            media = somma/nTemp;
+            if(temp> max){
+                max = temp;
+            }
+            if(temp< min){
+                min = temp;
+            }
+            if (temp > 10) {
+                temperature.add(Integer.toString(temp));
+            }
+        }
+        System.out.println("La media è: " +media);
+        System.out.println("Il massimo è: " +max);
+        System.out.println("Il minimo è:" +min);
+        System.out.println("I maggiori di 10 sono: " +temperature);
+
+
+        System.out.println("Esercizio 4");
+        int number = 1;
+        while(number != 0){
+            System.out.println("Inserisci un numero: ");
+            number = Integer.parseInt(tastiera.nextLine());
         }
     }
 }

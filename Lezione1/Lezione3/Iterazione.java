@@ -1,4 +1,4 @@
-package lezione3.lezion3;
+package Lezione3;
 
 public class Iterazione {
     public static void main(String[] args) {

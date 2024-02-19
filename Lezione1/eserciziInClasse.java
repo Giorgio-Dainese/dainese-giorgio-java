@@ -86,14 +86,43 @@ dispari. */
 
         System.out.println("Esercizio 5");
         ArrayList<String> numeri = new ArrayList<>();
+        ArrayList<String> numeriPosizioneDispari = new ArrayList<>();
         for (int x = 0; x < 15; x++) {
             System.out.println("Inserisci il " + (x + 1) + "° numero: ");
             numeri.add(tastiera.nextLine());
-            if(x%2==1){
-
+            String inserito = numeri.get(x);
+            if(x==0 || x%2==1){
+                numeriPosizioneDispari.add(inserito);
+        }
         }
         System.out.println(numeri);
+        System.out.println((numeriPosizioneDispari));
 
+
+
+
+        /*(terminale - while): chiedere in loop all'utente un numero da 1 a 4. Far eseguire una delle
+            seguenti azioni: 1 = inserimento numero lista
+                             2 = rimozione numero lista
+                             3 = stampa lista
+                             4 = chiusura del programma*/
+
+        System.out.println("Esercizio 6");
+        System.out.println("Inserisci un numero da 1 a 4: ");
+        int numeroLoop = Integer.parseInt(tastiera.nextLine());
+        while(numeroLoop != 4) {
+            if (numeroLoop == 1){
+                System.out.println("inserimento numero lista");
+                System.out.println("Inserisci un numero da 1 a 4: ");
+                numeroLoop = Integer.parseInt(tastiera.nextLine());
+            } else if (numeroLoop == 2) {
+                System.out.println("rimzione numero lista");
+                System.out.println("Inserisci un numero da 1 a 4: ");
+                numeroLoop = Integer.parseInt(tastiera.nextLine());
+            } else System.out.println("Stampa lista");
+            System.out.println("Inserisci un numero da 1 a 4: ");
+            numeroLoop = Integer.parseInt(tastiera.nextLine());
+//i sout me li fa 1 si e 1 no. col primo 4 mi richeide il numero, col secondo 4 chiude il prgramm
         }
     }
 }

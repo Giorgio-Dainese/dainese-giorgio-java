@@ -1,6 +1,6 @@
 //Metodi statici
 
-package Lezione4;
+package lezione4;
 
 public class metodi {
     public static int doppio(int n){

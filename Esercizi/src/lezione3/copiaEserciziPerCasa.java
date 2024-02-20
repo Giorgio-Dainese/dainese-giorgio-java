@@ -12,7 +12,7 @@ non scrive 0 (terminare quando inserisce 0)
 Es5: (String, substring) stampare il proprio nome al contrario
 */
 
-package Lezione3;
+package lezione3;
 
 import java.util.ArrayList;
 import java.util.Scanner;

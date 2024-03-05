@@ -62,8 +62,8 @@ public class esercizioMetodi {
         System.out.println(min(1,2));
         System.out.println(contrario("Filippo"));
         System.out.println(range(10));
-        List<Integer> list = () {
+        //List<Integer> list = () {
         }
-        System.out.println(stampa(list);
+        //System.out.println(stampa(list);
     }
-}
+

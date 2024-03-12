@@ -10,5 +10,12 @@ package lezione6.forme;
  * Creare una List<Poligono> forme, inserire un triangolo, un quadrato, un rettangolo e
  * calcolare la somma delle aree.
  */
+
+import java.util.ArrayList;
+import java.util.List;
 public class Main {
+    public static void main(String[] args) {
+        List<Poligono> forme= new ArrayList<>();
+
+    }
 }

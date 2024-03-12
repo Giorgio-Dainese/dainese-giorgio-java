@@ -1,11 +1,15 @@
 package lezione6.forme;
 
-public class Quadrato extends lezione6.forme.Poligono {
-    public static int perimetro(int lato, int altezza){
-        return lato*4;
+ class Quadrato extends Poligono {
+    @Override
+    public int perimetro(int lato, int altezza) {
+        return super.perimetro(lato, altezza);
+    }
 
-    }
-    public static int area(int lato, int altezza){
-        return lato*lato;
-    }
-}
+     @Override
+     public int area(int lato, int altezza) {
+         return super.area(lato, altezza);
+     }
+ }
+
+

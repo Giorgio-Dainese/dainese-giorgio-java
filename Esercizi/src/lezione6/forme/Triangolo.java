@@ -1,12 +1,15 @@
 package lezione6.forme;
 
 public class Triangolo extends lezione6.forme.Poligono {
-    public static int perimetro(int lato, int altezza){
-        return 0;
-        //Override nelle sottoclassi
+    @Override
+    public int perimetro(int lato, int altezza) {
+        return super.perimetro(lato, altezza);
     }
-    public static int area(int lato, int altezza){
-        return 0;
-        //Override nelle sottoclassi
+
+    @Override
+    public int area(int lato, int altezza) {
+        return super.area(lato, altezza);
     }
 }
+
+

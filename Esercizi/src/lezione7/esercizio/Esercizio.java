@@ -8,6 +8,6 @@ package lezione7.esercizio;
 public class Esercizio extends lezione7.esercizio.Persona {
 
     public Esercizio(String nome, String cognome, int eta, boolean patente) {
-        super(nome, cognome, eta, patente);
+        super(nome, cognome, eta, patente);cd
     }
 }
